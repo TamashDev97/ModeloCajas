@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+html {
+    background-color: #112;
+}
+
+body {
+    width: 1000px;
+    height: 1400px;
+    margin: 10em auto;
+    background-color: white;
+    border: 5px solid grey;
+}
+
+/* Cabecera */
+#header {
+    width: 1000px;
+    height: 100px;
+    background-color: grey;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    display: block;
+}
+
+/* Menu */
+#menu {
+    margin: 0;
+    width: 1000px;
+    height: 50px;
+    display: block;
+    background: white;
+}
+
+#menu ul li {
+    display: block;
+    float: left;
+    padding: 15px;
+    border: 2px solid rgb(68, 34, 34);
+    border-bottom: none;
+    border-top: none;
+    text-align: center;
+    transition: 1s;
+}
+
+#menu ul li a {
+    color: grey;
+    font-size: 20px;
+    font-weight: 100px;
+}
+
+#menu ul li:nth-child(1) {
+    border-left: none;
+}
+
+#menu ul li:nth-child(4) {
+    border-right: 3px solid grey;
+}
+
+
+/* Section left */
+#principal {
+    width: 600px;
+    height: 1200px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* Cajas */
+.caja,
+.caja-sombra-interior {
+    width: 250px;
+    height: 250px;
+    background: grey;
+    display: block;
+    float: left;
+    margin: 23px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+    align-items: center;
+    line-height: 235px;
+    color: white;
+    box-shadow: 3px 3px 20px #111a;
+    transition: 3s;
+}
+
+.caja:hover {
+    background: linear-gradient(0deg, grey, lightgrey);
+}
+
+.caja:active {
+    box-shadow: 2px 2px 20px #111a inset;
+}
+
+.caja-sombra-interior {
+    box-shadow: 2px 2px 20px #111a inset;
+}
+
+/* LATERAL DERECHO */
+#lateral {
+    color: rgb(14, 14, 14);
+    font-size: 13.4px;
+    font-style: initial;
+}
+
+.texto-lateral h2,
+p {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+}
